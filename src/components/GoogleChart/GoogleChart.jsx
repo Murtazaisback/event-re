@@ -18,6 +18,7 @@ const GoogleChart = () => {
             // Once the API is loaded, initialize it
             window.google.charts.load('current', { packages: ['corechart'] });
             window.google.charts.setOnLoadCallback(drawStuff);
+            resolve();
           };
           script.onerror = reject;
           document.head.appendChild(script);
@@ -58,8 +59,21 @@ const GoogleChart = () => {
       chartInstanceRef.current.draw(data, options);
     };
 
-    loadGoogleCharts();
-    drawStuff();
+    const handleScriptTimeout = () => {
+      console.error('Timeout loading Google Charts API');
+    };
+
+    // Timeout for script loading (adjust the timeout duration as needed)
+    const scriptTimeout = setTimeout(handleScriptTimeout, 5000);
+
+    loadGoogleCharts()
+      .then(() => {
+        clearTimeout(scriptTimeout);
+        drawStuff();
+      })
+      .catch((error) => {
+        console.error('Error loading Google Charts API:', error);
+      });
 
     // Handle window resize
     const handleResize = () => {
@@ -83,6 +97,7 @@ const GoogleChart = () => {
 
   return (
     <div id="number_format_chart" ref={chartContainerRef}>
+      {/* The Chart component is optional, use it only if necessary */}
       <Chart
         width={'500px'}
         height={'350px'}
