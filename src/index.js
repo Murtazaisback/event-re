@@ -44,6 +44,7 @@ import PublishEvent from './(root)/PublishEvent/page.js'
 import Setting from './(root)/Setting/page.js'
 import ShareEvent from './(root)/ShareEvent/page.js'
 import SingleEvent from './(root)/SingleEvent/page.js'
+import TicketPF from './(ticket)/TicketsPF/page.js'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -95,6 +96,7 @@ root.render(
         <Route path="/Setting" element={<Setting />} />
         <Route path="/ShareEvent" element={<ShareEvent />} />
         <Route path="/SingleEvent" element={<SingleEvent />} />
+        <Route path="/TicketPF" element={<TicketPF />} />
         {/* Define additional pages/routes */}
       </Routes>
     </Router>

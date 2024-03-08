@@ -13,13 +13,7 @@ main {
     height: 100%;
 }
 
-.main_container {
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 40px;
-    background-color: transparent;
-    position: relative;
-}
+
 
 .w_effect {
     position: absolute;
