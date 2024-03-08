@@ -426,11 +426,11 @@ a {
 
 /* -----------main------------- */
 .main_container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 40px;
     background-color: transparent;
-    /* position: relative; */
+    position: relative;
 }
 
 
@@ -5097,7 +5097,7 @@ height: 27px;
    /* padding: 10px 20px; */
    padding: 10px;
    gap: 5px;
-   width: 255px;
+   width: 220px;
 }
 .area_form_left textarea{
    border-radius: 10px;
@@ -5408,6 +5408,7 @@ height: 27px;
 
     .total {
         width: 100%;
+        text-align: center;
     }
 
     .upcoming_events {
@@ -5454,7 +5455,8 @@ height: 27px;
 
     /* ----------------------------main---------------------- */
     .main_container {
-        width: 90%;
+        width: 95% !important;
+        
         /* width: 89%; */
     }
 
@@ -5566,7 +5568,7 @@ height: 27px;
 
     .sidebar.close~.home-section {
 
-        width: 90%;
+        width: 85%;
     }
 
 
@@ -5707,7 +5709,7 @@ height: 27px;
     }
 
     .event_card img {
-        width: 265px;
+        width: 100%;
         height: 250px;
         /* margin-left: 20px; */
     }
@@ -6018,6 +6020,9 @@ height: 27px;
 }
 
 @media screen and (max-width: 550px) {
+    .new_menu{
+        width: 200px;
+    }
 
     .service_card {
         width: 60%;

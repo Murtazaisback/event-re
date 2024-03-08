@@ -69,7 +69,7 @@ const Header = () => {
     return (
         <nav className={isScrolled ? 'scrolled' : ''}>
             <a href="/">
-                <Img src={Logo} alt='logo' className='logo_nav' />
+                <img src={Logo} alt='logo' className='logo_nav' />
             </a>
 
 
@@ -78,20 +78,6 @@ const Header = () => {
             </button>
             <div className={`menu ${isOpen ? 'open' : ''}`}>
                 <ul className="navs-links">
-                    {/* {links.map(({ path, text, className }) => (
-                        <li key={path}>
-                            <a
-                                href={path}
-                                onClick={() => {
-                                    setSelectedLink(path);
-                                    closeMenu();
-                                }}
-                                className={`${className || ''} ${selectedLink === path && window.location.pathname === path ? 'yellow_crr' : ''}`}
-                            >
-                                {text}
-                            </a>
-                        </li>
-                    ))} */}
                     <li><a href='/' className={addYellowCrrClass('/')}>Home</a></li>
                     <li><a href='/Pricing' className={addYellowCrrClass('/Pricing')}>Pricing</a></li>
                     <li><a href='/EventsPage' className={addYellowCrrClass('/EventsPage')}>EVENTS</a></li>
@@ -124,3 +110,28 @@ const Header = () => {
 }
 
 export default Header
+
+
+
+
+
+
+
+
+
+
+
+{/* {links.map(({ path, text, className }) => (
+                        <li key={path}>
+                            <a
+                                href={path}
+                                onClick={() => {
+                                    setSelectedLink(path);
+                                    closeMenu();
+                                }}
+                                className={`${className || ''} ${selectedLink === path && window.location.pathname === path ? 'yellow_crr' : ''}`}
+                            >
+                                {text}
+                            </a>
+                        </li>
+                    ))} */}
