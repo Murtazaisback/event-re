@@ -1,13 +1,11 @@
 import React from 'react';
 import Chart from 'react-google-charts';
 
-const ColumnChart = () => {
+const SimpleColumnChart = () => {
   const data = [
-    ['Task', 'Hours per Day'],
+    ['', ''],
     ['Work', 11],
     ['Eat', 2],
-    ['Commute', 2],
-    ['Watch TV', 2],
     ['Sleep', 7],
   ];
 
@@ -20,15 +18,21 @@ const ColumnChart = () => {
         loader={<div>Loading Chart</div>}
         data={data}
         options={{
-          title: 'My Daily Activities',
-          chartArea: { width: '50%' },
+          title: '',
+          legend: 'none',
+          backgroundColor: 'transparent',
+          chartArea: { width: '95%', height: '100%' },
           hAxis: {
-            title: 'Total Hours',
+            title: '',
             minValue: 0,
+            gridlines: { color: 'transparent' },
+            textPosition: 'none', // Remove x-axis labels
           },
           vAxis: {
-            title: 'Task',
+            title: '',
+            gridlines: { color: 'transparent' },
           },
+          colors: ['#00ff00'],
         }}
         legendToggle
       />
@@ -36,4 +40,4 @@ const ColumnChart = () => {
   );
 };
 
-export default ColumnChart;
+export default SimpleColumnChart;
