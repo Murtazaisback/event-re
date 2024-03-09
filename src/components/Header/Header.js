@@ -26,16 +26,19 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
+            console.log('Scrolling...');
             const scrollPosition = window.scrollY;
-            setIsScrolled(scrollPosition >= 100);
+            setIsScrolled(scrollPosition >= 75); // Adjust this threshold if needed
         };
-
+    
+        // Attach the event listener to the window
         window.addEventListener('scroll', handleScroll);
-
+    
+        // Cleanup: Remove the event listener when the component unmounts
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, []); 
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -120,18 +123,3 @@ export default Header
 
 
 
-
-{/* {links.map(({ path, text, className }) => (
-                        <li key={path}>
-                            <a
-                                href={path}
-                                onClick={() => {
-                                    setSelectedLink(path);
-                                    closeMenu();
-                                }}
-                                className={`${className || ''} ${selectedLink === path && window.location.pathname === path ? 'yellow_crr' : ''}`}
-                            >
-                                {text}
-                            </a>
-                        </li>
-                    ))} */}

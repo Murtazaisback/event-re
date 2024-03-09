@@ -126,7 +126,7 @@ nav {
     height: 23.1489px;
   }
   nav {
-    position: sticky;
+    position: fixed;
     top: 0; /* Stick the header to the top of the viewport */
     /* background: black; */
     width: 100vw;
@@ -135,6 +135,7 @@ nav {
   }
   nav.scrolled {
     background-color: black; /* Change the background color when scrolled */
+    
   }
 
   .menu {
