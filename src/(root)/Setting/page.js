@@ -35,8 +35,8 @@ const Setting = () => {
                             </li>
                             <li>
                                 <a href="/Setting">
-                                    <GoGear className=" menu_dash_i yellow_cr" />
-                                    <span className="link_name yellow_cr">Setting    </span>
+                                    <GoGear className=" menu_dash_i yellow_m" />
+                                    <span className="link_name yellow_crr">Setting    </span>
                                 </a>
                             </li>
                         </ul>

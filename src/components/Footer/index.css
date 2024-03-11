@@ -48,7 +48,7 @@ footer {
     color: #000;
     font-weight: 500;
     background: linear-gradient(90deg, rgba(190, 158, 68, 1) 0%, rgba(216, 198, 144, 1) 100%);
-    border: 2px solid;
+    border: 2px solid transparent;
 
 }
 
@@ -144,7 +144,7 @@ footer {
 
 
 .footer_info_follow_img a i:hover {
-    color: var(--color-yellow);
+    color: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);;
     transform: scale(1.1);
 }
 
@@ -177,7 +177,9 @@ footer {
 }
 
 .Footer_img:hover {
-    color: var(--color-yellow);
+    color: #d8c690;
+    /* background-clip: text !important; */
+    /* background: var(--color-yellow2); */
 }
 
 @media screen and (max-width: 860px) {

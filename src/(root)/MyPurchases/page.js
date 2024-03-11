@@ -28,9 +28,9 @@ const MyPurchases = () => {
                             <li>
                                 <div className="iocn-link">
                                     <a href="/MyPurchases ">
-                                        <RiMoneyDollarCircleLine className="yellow_cr menu_dash_i" />
+                                        <RiMoneyDollarCircleLine className="yellow_m menu_dash_i" />
 
-                                        <span className="link_name yellow_cr">My Purchases</span>
+                                        <span className="link_name yellow_crr">My Purchases</span>
                                     </a>
                                 </div>
                             </li>

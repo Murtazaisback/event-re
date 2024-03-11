@@ -23,8 +23,8 @@ const CustomerAccount = () => {
                             <li>
                                 <a href="/Dashboard">
 
-                                    <AiOutlineUser className=" menu_dash_i yellow_cr" />
-                                    <span className="link_name yellow_cr">Dashboard</span>
+                                    <AiOutlineUser className=" menu_dash_i yellow_m" />
+                                    <span className="link_name yellow_crr">Dashboard</span>
                                 </a>
                             </li>
                             <li>

@@ -37,7 +37,7 @@ const Login = () => {
 
                                     <label htmlFor="">Password:</label>
                                     <input type="password" required/>
-                                <a href="/" className='cursor_pointer submit_btn'>Login</a>
+                                <a href="/CustomerAccount" className='cursor_pointer submit_btn'>Login</a>
 
                             </form>
                             <div className="sign_btnss">
