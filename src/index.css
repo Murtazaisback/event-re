@@ -282,6 +282,7 @@ a {
 .navs-links li a {
     text-decoration: none;
     margin: 0 0.7vw;
+    
     /* transition: all ease-in-out 0.25s; */
     font-size: 15px;
     /* background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%); */
@@ -1726,7 +1727,7 @@ input:checked+.slider:before {
 .right_info_ticket {
     display: flex;
     align-items: center;
-    /* gap: 20px; */
+    gap: 10px;
     margin-top: 20px;
     font-size: 13px;
 }

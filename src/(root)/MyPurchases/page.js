@@ -63,15 +63,15 @@ const MyPurchases = () => {
                                                 <td>Event Title Goes Here</td>
                                                 <td>11/20/2026</td>
                                                 <td>$150.45</td>
-                                                <td><RiCoupon2Line className="purchase_icon"/></td>
-                                                <td><BsDownload  className="purchase_icon"/></td>
+                                                <td> <a href='/TicketPF' target="_blank"><RiCoupon2Line className="purchase_icon"/></a> </td>
+                                                <td><a href='/TicketPF' target="_blank"> <BsDownload  className="purchase_icon"/></a></td>
                                             </tr>
                                             <tr>
                                                 <td>Event Title Goes Here</td>
                                                 <td>11/20/2026</td>
                                                 <td>$150.45</td>
-                                                <td><RiCoupon2Line className="purchase_icon"/></td>
-                                                <td><BsDownload  className="purchase_icon"/></td>
+                                                <td> <a href='/TicketPF' target="_blank"><RiCoupon2Line className="purchase_icon"/></a> </td>
+                                                <td><a href='/TicketPF' target="_blank"> <BsDownload  className="purchase_icon"/></a></td>
                                             </tr>
                                         </tbody>
                                     </table>

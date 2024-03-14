@@ -34,6 +34,7 @@ nav {
 
 .navs-links li a {
   color: white;
+  padding: 10px !important;
   font-size: 16px;
   text-decoration: none;
   font-weight: 500;
@@ -141,9 +142,10 @@ nav {
   .menu {
     display: block;
     position: fixed; /* Use fixed positioning for the menu */
-    top: 0px; 
-    /* right: 0px; */
-    background-color: #131418;
+    top: 50px; 
+
+    right: 0px;
+    background-color: black;
     /* Set your desired background color */
     border-radius: 5px;
     overflow: hidden;
@@ -200,11 +202,10 @@ nav {
 
 
   .menu.open {
-    height: 350px;
+    height: fit-content;
     /* height: 100%; */
     opacity: 1;
     visibility: visible;
-    width: 95%;
 
   }
 
@@ -216,7 +217,7 @@ nav {
   }
 
   .menu li {
-    padding: 10px 20px;
+    padding: 7px 10px;
     /* border-bottom: 1px solid #ddd; */
   }
 
@@ -247,7 +248,8 @@ nav {
 
   .navs-links {
     flex-direction: column;
-    gap: 5px;
+    align-items: end;
+    gap: 0px;
     padding: 10px;
   }
 
