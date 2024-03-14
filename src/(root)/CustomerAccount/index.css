@@ -122,6 +122,9 @@ gap: 10px;
 }
 
 @media screen and (max-width: 860px) {
+    .manage_box_warp{
+        width: 400px;
+    }
     .upcoming_warp {
         flex-wrap: wrap;
     }
@@ -130,13 +133,16 @@ gap: 10px;
         overflow: hidden;
     }
     .upcoming_action{
-        width: 100%;
+        width: 400px;
     }
     .setting_box_inp{
         gap: 10px;
     }
     .setting_box_warp input{
         padding: 5px;
+    }
+    .setting_box_warp{
+        flex-direction: column;
     }
     .setting_box_warp label{
         width: 90px;

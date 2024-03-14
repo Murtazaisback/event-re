@@ -96,5 +96,8 @@ background: radial-gradient(79.36% 84.72% at -61.47% 22.46%, rgba(99, 99, 99, 0.
     .event_card img{
         width: 100%;
     }
+    .event_card:hover{
+        box-shadow: none !important;
+    }
     
 }
