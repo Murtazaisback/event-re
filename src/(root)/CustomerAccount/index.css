@@ -35,6 +35,7 @@ flex-direction: column;
 align-items: center;
 gap: 17px;
 padding: 20px;
+height: 100%;
 }
 .event_like{
     display: flex;
@@ -74,7 +75,7 @@ flex-direction: column;
 .setting_box_inp{
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 20px;
 }
 .setting_box_warp{
     display: flex;

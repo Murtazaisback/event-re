@@ -1,4 +1,4 @@
-import { TicketPF_Img } from '../../public'
+import { Logo } from '../../public'
 // import Image from 'next/image'
 import React from 'react'
 
@@ -12,7 +12,7 @@ const TicketPF = () => {
             <div className="ticket_container">
                 <div className="logos">
                     <button className="Organizer_logo">Organizer Logo</button>
-                    <img src={TicketPF_Img} alt=""/>
+                    <img src={Logo} alt=""/>
                 </div>
                 <p className="pc_no">eTicket</p>
                 <div className="tickets_infos">

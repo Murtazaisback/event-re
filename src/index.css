@@ -4462,6 +4462,7 @@ height: 27px;
     background: black;
     border-radius: 10px;
     width: 205px !important;
+    padding: 5px;
 }
 
 .ticket_dates h3 {

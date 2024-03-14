@@ -76,7 +76,7 @@ const Setting = () => {
                                                             <input type="text" name="" id="" />
                                                         </div>
                                                     </div>
-                                                    <div className="setting_box_inp">
+                                                    <div className="setting_box_inp" style={{marginTop: "30px",}}>
                                                         <div className='setting_box_warp'>
 
                                                             <label htmlFor="">Phone</label>
