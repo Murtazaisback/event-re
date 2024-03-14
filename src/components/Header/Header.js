@@ -77,7 +77,13 @@ const Header = () => {
 
 
             <button onClick={toggleMenu} className="menu-btn">
-                {isOpen ? <BsX className="icon_i" /> : <BsList className="icon_i" />}
+            <input class="checkbox7" type="checkbox" name="" id="" />
+                {/* {isOpen ? <BsX className="icon_i" /> : <BsList className="icon_i" />} */}
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
             </button>
             <div className={`menu ${isOpen ? 'open' : ''}`}>
                 <ul className="navs-links">

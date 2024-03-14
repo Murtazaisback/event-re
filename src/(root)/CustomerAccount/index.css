@@ -123,6 +123,11 @@ gap: 10px;
 }
 
 @media screen and (max-width: 860px) {
+        .event_like_box{
+            background: none !important;
+            width: 330px !important;
+            text-align: center;
+        }
     .manage_box_warp{
         width: 400px;
     }

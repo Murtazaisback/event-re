@@ -5248,6 +5248,13 @@ height: 27px;
 }
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
+    .card_info{
+        padding-left: 5px !important;
+    }
+    .event_like_box{
+        background: none !important;
+        width: 200px;
+    }
     .Free_trail{
         width: 100%;
     }
