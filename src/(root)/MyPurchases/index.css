@@ -36,6 +36,24 @@ padding: 20px;
     padding: 10px;
     overflow-y: scroll;
 }
+.filter_tables_body{
+    width: 100%;
+}
+.manage_filter_tables_head{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+.head_it{
+    width: 125px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+}
 .manage_filter_tabless tbody tr td{
     padding-top: 20px;
     margin-top: 20px !important;
@@ -49,6 +67,18 @@ padding: 20px;
     color: #FFE100;
 }
 
+.body_tr{
+    /* background: #FFE100; */
+    width: 100% !important;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
 @media screen and (max-width: 860px) {
     /* .manage_filter_tablee{ */
         .purchase_warp{

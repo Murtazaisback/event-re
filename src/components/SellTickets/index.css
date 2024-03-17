@@ -28,19 +28,6 @@
     background: none ;
   }
 
-  .pluss {
-    color: white;
-    background: none;
-    border: 1px solid white;
-    padding: 4px 10px ;
-    padding-top: 3px;
-
-  }
-
-  .counter-value {
-    font-size: 24px;
-    /* margin: 0 20px; */
-  }
   .sell_tickets_warp{
     margin-top: 100px ;
     
@@ -59,10 +46,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-}
-.Ticket_p{
-    margin-left: 170px;
-    margin-top: 30px;
 }
 .sell_tickets_box_in {
   display: flex;

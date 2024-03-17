@@ -135,7 +135,7 @@ const ScanTickets = () => {
                                         </div>
                                         <div className="tiktct_mbtn">
                                             <button onClick={toggleCamera}>
-                                                {isCameraOn ? 'Close Camera' : 'Open Camera'}
+                                                {isCameraOn ? 'Close Camera' : 'open Camera'}
                                             </button>
                                             {isCameraOn && (
                                                 <Webcam

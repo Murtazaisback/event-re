@@ -159,7 +159,7 @@ const EventRegister = ({ title = '', label = '', href = '', showBackButton }) =>
                                             </div>
 
                                         </div>
-                                        <button type="submit" className="btn" style={{ color: "#fff" }}>Create Venue</button>
+                                        <button type="submit" className="btn" >Create Venue</button>
                                     </form>
 
                                 </div>

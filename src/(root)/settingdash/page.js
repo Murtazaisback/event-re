@@ -177,9 +177,9 @@ const Settingdash = () => {
                                                 </div>
                                             </div>
                                             </div>
-                                            <div className='save_btn_method'>
+                                            <div className=''>
 
-                                            <button type='submit'>Save</button>
+                                            <button type='submit' className='btn'>Save</button>
                                             </div>
                                         </form>
 

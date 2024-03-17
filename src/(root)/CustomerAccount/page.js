@@ -64,7 +64,7 @@ const CustomerAccount = () => {
                                         <div className="upcoming_action">
                                             <h3>Quick Actions</h3>
                                             <a href="">Add Payment Method</a>
-                                            <a href="">Browse Events</a>
+                                            <a href="/EventsPage">Browse Events</a>
                                             <a href="">View Past Purchases</a>
                                         </div>
 
@@ -73,17 +73,17 @@ const CustomerAccount = () => {
                                         <div className="event_like">
                                             <h3>Events You Might Like</h3>
                                             <div className="evet_rows">
-                                                <EventsCard imge={One_img}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' showMenuButton={false}  />
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' showMenuButton={false} />
-                                                <EventsCard imge={EventImg} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' showMenuButton={false} />
+                                                <EventsCard imge={One_img}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false}  />
+                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
+                                                <EventsCard imge={EventImg} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
                                             </div>
                                         </div>
                                         <div className="event_Organizer">
                                             <h3>More Events By " Event Organizer "</h3>
                                             <div className="evet_rows">
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' showMenuButton={false} />
-                                                <EventsCard imge={EventImg}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' showMenuButton={false} />
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' showMenuButton={false} />
+                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
+                                                <EventsCard imge={EventImg}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
+                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
                                             </div>
                                         </div>
                                     </div>

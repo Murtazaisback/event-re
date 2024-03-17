@@ -117,7 +117,7 @@ const ShareEvent = () => {
                                             <h3>Share Options</h3>
                                             <div className="share_link">
                                                 <p>Shareable Link:</p>
-                                                <input type="text" disabled />
+                                                <input type="text" disabled placeholder='https://event-re.vercel.app/EventName'/>
                                                 {/* <img src="../imgs/copy 1.png" alt=""/>/ */}
                                                 <IoCopyOutline className="share_link_i" />
 

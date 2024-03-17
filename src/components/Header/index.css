@@ -125,7 +125,7 @@ nav {
 
 .hamburger-lines {
   display: block;
-  height: 26px;
+  height: 23px;
   width: 32px;
   position: absolute;
   top: 10px;
@@ -138,7 +138,7 @@ nav {
 
 .hamburger-lines .line {
   display: block;
-  height: 2px;
+  height: 1px;
   width: 100%;
   border-radius: 10px;
   background: white;
@@ -178,7 +178,7 @@ nav {
 }
 
 .menu-btn input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-  transform: rotate(45deg) scaleX(0.9);;
+  transform: rotate(45deg) scaleX(0.79);;
 }
 
 .menu-btn input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
@@ -186,7 +186,7 @@ nav {
 }
 
 .menu-btn input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-  transform: rotate(-45deg) scaleX(0.93);;
+  transform: rotate(-45deg) scaleX(0.81);;
 }
 
 
@@ -211,7 +211,7 @@ nav {
   .menu {
     display: block;
     position: fixed; /* Use fixed positioning for the menu */
-    top: 50px; 
+    top: 35px; 
 
     right: 0px;
     background-color: black;
@@ -222,6 +222,18 @@ nav {
     height: 0;
     opacity: 0;
     visibility: hidden;
+    z-index: 1000;
+  transition: transform 0.3s ease; /* Smooth transition */
+  transform: translateY(-90%);
+  }
+  .menu.open {
+    height: fit-content;
+    opacity: 1;
+
+    visibility: visible;
+    transform: translateY(0);
+    /* top: calc(10px + 10px); */
+
   }
 
   .menu-btn {
@@ -270,13 +282,7 @@ nav {
   }
 
 
-  .menu.open {
-    height: fit-content;
-    /* height: 100%; */
-    opacity: 1;
-    visibility: visible;
-
-  }
+ 
 
 
   .menu ul {

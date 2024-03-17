@@ -2,7 +2,8 @@
 import SubMenus, { Silder_icon } from '../../components/SubMenus/SubMenus'
 import React, { useState } from 'react'
 import { CiCirclePlus } from 'react-icons/ci'
-import { FaChevronDown, FaFacebookF, FaLinkedin, FaRegCalendarAlt, FaRegUser, FaTwitter } from 'react-icons/fa'
+import { FaChevronDown, FaFacebookF, FaLinkedin, FaRegCalendarAlt, FaRegUser, FaTwitter, } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6';
 import { FaGear, FaRegMessage } from 'react-icons/fa6'
 import { IoSpeedometerOutline } from 'react-icons/io5'
 import { RiMoneyDollarCircleLine } from 'react-icons/ri'
@@ -156,8 +157,7 @@ const Event = () => {
                                             <FaLinkedin className="share_icon_i" target='_blank'/>
                                             </a>
                                             <a href="https://twitter.com/EventVisionary" target='_blank'>
-
-                                            <FaTwitter className="share_icon_i" />
+                                            <FaXTwitter className="share_icon_i" target="_black"/>
                                             </a>
                                         </div>
                                     </div>

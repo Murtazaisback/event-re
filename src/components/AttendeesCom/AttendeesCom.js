@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaSearch, FaCheck } from 'react-icons/fa';
 import ArchivedBack from '../ArchivedBack/ArchivedBack';
 
+
 const AttendeesCom = ({ title = "", showBackButton }) => {
+
+    const [isGreenCheckVisible, setIsGreenCheckVisible] = useState({});
+
+    // Function to toggle visibility for a specific body_tr
+    const toggleGreenCheck = (index) => {
+        setIsGreenCheckVisible(prevState => ({
+            ...prevState,
+            [index]: !prevState[index] // Toggle visibility for the given index
+        }));
+    };
     return (
         <div className="manage_order_area">
             {showBackButton && <ArchivedBack />}
@@ -22,46 +33,33 @@ const AttendeesCom = ({ title = "", showBackButton }) => {
 
             <div className="manage_filter_table">
                 <table className="manage_filter_tables">
-                    <thead>
-                        <tr>
-                            <th>Mark Admitted</th>
-                            <th>Name</th>
-                            <th>Section</th>
-                            <th>Seat ID</th>
-                            <th>Table ID</th>
-                            <th>Order #</th>
-                            <th>Order Note</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><FaCheck style={{ color: "green" }} /></td>
-                            <td>Johnny Cash</td>
-                            <td>A</td>
-                            <td>39</td>
-                            <td>6</td>
-                            <td>A-00011123323</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><FaCheck style={{ color: "green" }} /></td>
-                            <td>Johnny Cash</td>
-                            <td>A</td>
-                            <td>39</td>
-                            <td>6</td>
-                            <td>A-00011123323</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><FaCheck style={{ color: "green" }} /></td>
-                            <td>Johnny Cash</td>
-                            <td>A</td>
-                            <td>39</td>
-                            <td>6</td>
-                            <td>A-00011123323</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
+                    <div>
+                        <div className='manage_filter_tables_head'>
+
+                            <div className='head_it'>Mark Admitted</div>
+                            <div className='head_it'>Name</div>
+                            <div className='head_it'>Section</div>
+                            <div className='head_it'>Seat ID</div>
+                            <div className='head_it'>Table ID</div>
+                            <div className='head_it'>Order #</div>
+                        </div>
+                    </div>
+                    <div className='filter_tables_body'>
+                        {[...Array(5)].map((_, index) => (
+                            <div className='body_tr' key={index} onClick={() => toggleGreenCheck(index)}>
+                                <div className='head_it'>
+                                    <div className='green_check'>
+                                        <FaCheck style={{ color: "green", display: isGreenCheckVisible[index] ? 'block' : 'none' }} />
+                                    </div>
+                                </div>
+                                <div className='head_it'>Johnny Cash</div>
+                                <div className='head_it'>A</div>
+                                <div className='head_it'>39</div>
+                                <div className='head_it'>6</div>
+                                <div className='head_it'>A-00011123323</div>
+                            </div>
+                        ))}
+                    </div>
                 </table>
             </div>
         </div>

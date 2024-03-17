@@ -9,9 +9,9 @@
     transition: all ease-in-out 0.25s;
 }
 .share_icon_i:hover{
-    color: #FFE100;
+    color: #cbb26a;
 }
 .share_link_i{
     font-size: 25px;
-    color: #FFE100;
+    color: yellow;
 }

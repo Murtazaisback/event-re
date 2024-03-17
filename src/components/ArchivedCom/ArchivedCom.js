@@ -11,7 +11,7 @@ const ArchivedCom = () => {
     return (
         <div className="ct_tr_container">
 
-            <div className="ct_tr accordion5">
+            <div className="ct_tr accordion5" onClick={togglePanel}>
                 <div className="ct_main_data">
                     <p>Event Title 1</p>
                     <p className="c_grey">Event start time - end time</p>

@@ -954,7 +954,7 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
 .tab_btnn {
     background: transparent;
     color: black;
-    padding: 10px 15px;
+    padding: 7px 17px;
     /* border: 1px solid white; */
     outline: none !important;
     border-radius: 25px;
@@ -962,7 +962,12 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     cursor: pointer;
     border: 1px solid #be9e44;
     background: linear-gradient(90deg, rgba(190, 158, 68, 1) 0%, rgba(216, 198, 144, 1) 100%);
-    
+    transition: all ease-in-out 0.3s;
+}
+.tab_btnn:hover{
+    color: white;
+    background: none;
+    border: 1px solid #be9e44;
 }
 
 .tab_btn svg {
@@ -1451,6 +1456,10 @@ input:checked+.slider:before {
     outline: none;
     border: none;
     padding: 7px 15px;
+    color: white !important;
+}
+.share_link input::placeholder{
+    color: white;
 }
 
 .share_icon i {
@@ -1556,9 +1565,6 @@ input:checked+.slider:before {
     color: white;
     cursor: pointer;
     transition: all ease-in-out 0.25s;
-}
-.icons svg:hover{
-    color: #FAE100;
 }
 
 
@@ -2063,6 +2069,9 @@ input:checked+.slider:before {
     align-items: center;
     gap: 40px;
 }
+.sell_forma input{
+    color: white;
+}
 
 .sell_formr {
     display: flex;
@@ -2105,7 +2114,7 @@ input:checked+.slider:before {
     background: #FFF;
     outline: none;
     border: none;
-    color: black;
+    color: white;
 }
 
 .raw_grey input {
@@ -2579,6 +2588,7 @@ input:checked+.slider:before {
     background: #212121;
     border-radius: 10px;
     padding-bottom: 200px;
+    overflow: hidden;
 
 }
 
@@ -3700,6 +3710,7 @@ height: 27px;
 .add_venue form button {
     width: 60%;
     margin: auto;
+    color: #000;
 }
 
 .add_venue form input {
@@ -4108,6 +4119,9 @@ height: 27px;
     flex-direction: column;
     gap: 5px;
 }
+.inputs_sm input{
+    color: white;
+}
 
 .reset_pass button {
     background: none;
@@ -4196,6 +4210,7 @@ height: 27px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .ct_main_data {
@@ -5246,6 +5261,55 @@ height: 27px;
 
 .opt_butn{
     margin: auto;
+}
+.setting_pop_warp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 125px;
+}
+.setting_pop_con{
+    background: #000;
+    padding: 20px;
+    position: relative;
+    border-radius: 25px;
+    width: 500px;
+}
+.setting_pop_con h4{
+    text-align: center;
+    font-size: 21px;
+}
+.setting_pop_input_row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.setting_pop_input_row input{
+    outline: none;
+    border: none;
+    background: #131310;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+.setting_pop_input_row label{
+    text-transform: capitalize;
+}
+.btn_setting{
+    align-self: center;
+    /* margin: 0 auto; */
+    margin-top: 20px;
+    width: 100%;
+} 
+.filter_head{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+.filter_head span{
+    width: 120px;
 }
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
