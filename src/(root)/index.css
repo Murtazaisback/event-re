@@ -315,6 +315,8 @@ main {
 .main_imag {
     width: 100%;
     height: 450px;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .collage_img {
@@ -332,6 +334,8 @@ main {
     width: 50%;
     display: flex;
     flex-direction: column;
+    /* overflow: hidden;
+    border-radius: 25px; */
 }
 
 .show_imgs {
@@ -466,6 +470,8 @@ main {
 .about_img_main{
     width: 550px;
     height: 450px;
+    /* overflow: hidden; */
+    border-radius: 15px;
 }
 
 

@@ -73,17 +73,17 @@ const CustomerAccount = () => {
                                         <div className="event_like">
                                             <h3>Events You Might Like</h3>
                                             <div className="evet_rows">
-                                                <EventsCard imge={One_img}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false}  />
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
-                                                <EventsCard imge={EventImg} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
+                                                <EventsCard imge={One_img}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false}  />
+                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
+                                                <EventsCard imge={EventImg} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
                                             </div>
                                         </div>
                                         <div className="event_Organizer">
                                             <h3>More Events By " Event Organizer "</h3>
                                             <div className="evet_rows">
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
-                                                <EventsCard imge={EventImg}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/sellTickets' showMenuButton={false} />
+                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
+                                                <EventsCard imge={EventImg}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
+                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
                                             </div>
                                         </div>
                                     </div>

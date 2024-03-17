@@ -32,9 +32,9 @@ const ArchivedCom = () => {
             <div className={`panel5 ${isPanelVisible ? 'show' : ''}`}>
 
                 <div className="ct_inner_btn">
-                    <a href="/ArchivedEvent">Event Details</a>
+                    <a href="/ArchivedOrder">Event Details</a>
                     <a href="/ArchivedAttendess">Attendees</a>
-                    <a href="/ArchivedOrder">Orders</a>
+                    <a href="/ArchivedEvent">Orders</a>
                     <a href="/ArchivedPrice">Ticket Prices</a>
                     <a href="/ArchivedChart">Seating Chart</a>
                 </div>

@@ -10,7 +10,19 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
   const togglePopup9 = () => {
     setIsOpen9(!isOpen9);
   };
+  const handleClick = (event) => {
+    event.preventDefault(); // Prevent default action of the anchor tag
+    // Your code to open the popup
+  };
+  const [showPopup, setShowPopup] = useState(false);
+
+    const togglePopup = () => {
+        setShowPopup(!showPopup);
+    };
+
+  
     return (
+        <>
         <div className="manage_order_area">
             {showBackButton && <ArchivedBack />}
 
@@ -53,7 +65,8 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
                         </div>
                     </div>
                     <div className='filter_tables_body'>
-                            <a href='#popup5' className='body_tr'>
+                        
+                            <a href='#popup' className='body_tr' onClick={togglePopup} >
                                 <div className='head_it'>A-00011123323</div>
                                 <div className='head_it'>Johnny Cash</div>
                                 <div className='head_it'>4</div>
@@ -80,7 +93,7 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
 
                                 </a>
                             
-                        <a href='#popup5' className='body_tr' >
+                        <a href='#popup' className='body_tr'  >
                             <div className='head_it'>A-00011123323</div>
                             <div className='head_it'>Johnny Cash</div>
                             <div className='head_it'>4</div>
@@ -102,7 +115,7 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
                                 </div>
 
                         </a>
-                        <a href='#popup5' className='body_tr' >
+                        <a href='#popup' className='body_tr' >
                             <div className='head_it'>A-00011123323</div>
                             <div className='head_it'>Johnny Cash</div>
                             <div className='head_it'>4</div>
@@ -125,7 +138,7 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
                                 </div>
 
                         </a>
-                        <a href='#popup5' className='body_tr' >
+                        <a href='#popup' className='body_tr' >
                             <div className='head_it'>A-00011123323</div>
                             <div className='head_it'>Johnny Cash</div>
                             <div className='head_it'>4</div>
@@ -226,7 +239,8 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
                     </div>
                 </div>
             </div>
-            <div id="popup5" className="overlay ">
+        </div>
+            {/* <div id="popup" className={`overlay ${showPopup ? 'active' : ''}`}>
 
 
                 <div className="order_deatils">
@@ -309,8 +323,10 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
                     </div>
 
                 </div>
-            </div>
-        </div>
+            </div> */}
+            </>
+
+
     )
 }
 

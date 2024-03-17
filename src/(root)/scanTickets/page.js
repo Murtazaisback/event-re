@@ -29,11 +29,11 @@ const ScanTickets = () => {
 
 
 
-    const webcamRef = useRef(null);
     const [isCameraOn, setIsCameraOn] = useState(false);
+    const webcamRef = useRef(null);
 
     const toggleCamera = () => {
-        setIsCameraOn((prevIsCameraOn) => !prevIsCameraOn);
+        setIsCameraOn(prevState => !prevState);
     };
 
     const capture = () => {
@@ -128,15 +128,18 @@ const ScanTickets = () => {
                                     <div className="manage_order_area">
                                         <div className="manage_two_sec">
                                             <div className="manage_two_info">
-                                                <h1> Event Title: Scan Tickets</h1>
-                                                <p>Use your mobile device to scan your customers’ tickets. You must enable
-                                                    permissions on your device in order to use this feature. </p>
+                                                <h1>Scan Tickets: Event title show here</h1>
+                                                {!isCameraOn && (
+                                                    <p>Use your mobile device to scan your customers’ tickets. You must enable permissions on your device in order to use this feature.</p>
+                                                )}
                                             </div>
                                         </div>
                                         <div className="tiktct_mbtn">
+                                        {!isCameraOn && (
                                             <button onClick={toggleCamera}>
-                                                {isCameraOn ? 'Close Camera' : 'open Camera'}
+                                                open Camera
                                             </button>
+                                            )}
                                             {isCameraOn && (
                                                 <Webcam
                                                     audio={false}
@@ -146,7 +149,6 @@ const ScanTickets = () => {
                                                     height={480}
                                                 />
                                             )}
-                                            {isCameraOn && <button onClick={capture}>Capture Image</button>}
                                         </div>
                                         <video id="preview"></video>
 
