@@ -46,6 +46,7 @@ padding: 20px;
     padding-bottom: 10px;
     text-align: center;
     border-bottom: 1px solid lightgray;
+    justify-content: space-around;
 }
 .head_it{
     width: 125px;

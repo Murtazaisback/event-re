@@ -4622,7 +4622,7 @@ height: 27px;
 
 .sidebar {
     height: 100%;
-    width: 250px;
+    width: 225px;
     background: transparent;
     z-index: 100;
     transition: all 0.25s ease;
@@ -5313,6 +5313,15 @@ height: 27px;
 }
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
+    .event_dash_btns{
+        gap: 10px;
+    }
+    .event_dash_btns a{
+        font-size: 14px;
+    }
+    .dashboard_section{
+        padding: 5px;
+    }
     .card_info{
         padding-left: 5px !important;
     }
@@ -5353,7 +5362,9 @@ height: 27px;
         height: 250px;
     }
     .event_warp_btns{
-        gap: 0;
+        gap: 10px;
+        width: 260px;
+        margin-left: 50px;
     }
     .event_dash_bt{
         width: 100%;
@@ -6081,6 +6092,9 @@ height: 27px;
 }
 
 @media screen and (max-width: 850px) {
+    .sidebar .nav-links li a .link_name{
+        font-size: 15px;
+    }
     
     .service_cards {
         flex-direction: column;
@@ -6119,7 +6133,7 @@ height: 27px;
     .manage_filter_table {
         overflow-y: scroll;
         font-size: 12px;
-        width: 700px;
+        width: 1200px;
     }
 
     .tabs_container {
