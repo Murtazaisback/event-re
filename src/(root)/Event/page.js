@@ -155,8 +155,11 @@ const Event = () => {
                                                 <p className="para_title">Share a public version of this page. </p>
                                                 <p className="para_p">For example, you can add this to your bio link section on your social media, or share on your website to lead customers to your events.</p>
                                                 <div className="copy_links">
-                                                    <input type="text" disabled className="cursor_pointer" 
-                                                    placeholder='https://event-re.vercel.app/EventName"'/>
+                                                <div className='Input_a'>
+                                                    <a href='/Eventspage' target="_blank"></a>
+                                                        <input type="text" disabled className="cursor_pointer"
+                                                            placeholder='https://event-re.vercel.app/EventName' />
+                                                    </div>
                                                     <IoCopyOutline
                                                         className="share_link_i"
                                                         onClick={copyTextToClipboard}
@@ -164,15 +167,15 @@ const Event = () => {
                                                     />
 
                                                 </div>
-                                                    {copied && <div className='copy_toast'>Copied to clipboard!</div>}
+                                                {copied && <div className='copy_toast'>Copied to clipboard!</div>}
                                                 <div className="icons">
                                                     <a href="https://www.facebook.com/profile.php?id=61554004420226" target="_blank">
 
-                                                        <FaFacebookF className="share_icon_i"/>
+                                                        <FaFacebookF className="share_icon_i" />
                                                     </a>
                                                     <a href="https://www.instagram.com/eventvisionary/?igshid=MzMyNGUyNmU2YQ%3D%3D" target="_blank">
 
-                                                        <FaLinkedin className="share_icon_i"  />
+                                                        <FaLinkedin className="share_icon_i" />
                                                     </a>
                                                     <a href="https://twitter.com/" target="_blank">
                                                         <FaXTwitter className="share_icon_i" />
