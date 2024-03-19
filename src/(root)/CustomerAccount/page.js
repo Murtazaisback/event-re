@@ -65,7 +65,7 @@ const CustomerAccount = () => {
                                             <h3>Quick Actions</h3>
                                             <a href="">Add Payment Method</a>
                                             <a href="/EventsPage">Browse Events</a>
-                                            <a href="">View Past Purchases</a>
+                                            <a href="/MyPurchases">View Past Purchases</a>
                                         </div>
 
                                     </div>
