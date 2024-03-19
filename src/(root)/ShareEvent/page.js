@@ -12,6 +12,7 @@ import { RiMoneyDollarCircleLine } from 'react-icons/ri'
 import { SlLocationPin } from 'react-icons/sl'
 import { MdExitToApp } from "react-icons/md";
 import RootLayout from '../layout';
+import { FaXTwitter } from 'react-icons/fa6';
 
 import "./index.css"
 
@@ -162,7 +163,7 @@ const ShareEvent = () => {
 
                                                             <a href="https://www.linkedin.com/" target="_blank">
 
-                                                                <FaTwitter className="share_icon_i" />
+                                                            <FaXTwitter className="share_icon_i" />
                                                             </a>
                                                         </div>
                                                     </div>

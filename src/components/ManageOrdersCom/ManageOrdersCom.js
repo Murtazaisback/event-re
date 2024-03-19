@@ -83,7 +83,7 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
                                 <div className='head_it'>
 
                                     <div className="ox ">
-                                        <a className="" href="#popup5">
+                                        <a className="" href="#popup">
                                             <HiOutlineDotsHorizontal style={{ color: "#ffffff" }} />
 
                                         </a>
@@ -106,7 +106,7 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
                             <div className='head_it'>
 
                                     <div className="ox ">
-                                        <a className="" href="#popup5">
+                                        <a className="" href="#popup">
                                             <HiOutlineDotsHorizontal style={{ color: "#ffffff" }} />
 
                                         </a>
@@ -129,7 +129,7 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
                             <div className='head_it'>
 
                                     <div className="ox ">
-                                        <a className="" href="#popup5">
+                                        <a className="" href="#popup">
                                             <HiOutlineDotsHorizontal style={{ color: "#ffffff" }} />
 
                                         </a>
@@ -148,7 +148,7 @@ const ManageOrdersCom = ({ title = '', label = '', href = '', showBackButton }) 
                             <div className='head_it'>
 
                                     <div className="ox ">
-                                        <a className="" href="#popup5">
+                                        <a className="" href="#popup">
                                             <HiOutlineDotsHorizontal style={{ color: "#ffffff" }} />
 
                                         </a>
