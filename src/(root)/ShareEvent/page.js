@@ -21,13 +21,13 @@ const ShareEvent = () => {
     const [copied, setCopied] = useState(false);
 
     const copyTextToClipboard = () => {
-      const textToCopy = "https://event-re.vercel.app/EventName"; // Text you want to copy
-      navigator.clipboard.writeText(textToCopy)
-        .then(() => {
-          setCopied(true);
-          setTimeout(() => setCopied(false), 2000); // Reset copied state after 2 seconds
-        })
-        .catch(error => console.error('Unable to copy text: ', error));
+        const textToCopy = "https://event-re.vercel.app/SingleEvent"; // Text you want to copy
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000); // Reset copied state after 2 seconds
+            })
+            .catch(error => console.error('Unable to copy text: ', error));
     };
     return (
         <>
@@ -135,13 +135,20 @@ const ShareEvent = () => {
 
                                                     <div className="share_link">
                                                         <p>Shareable Link:</p>
-                                                        <input
-                                                            type="text"
-                                                            disabled
-                                                            placeholder="https://event-re.vercel.app/EventName"
-                                                        />
+                                                        <div className='Input_a'>
+
+
+                                                            <a href='/SingleEvent' target='_blank' >
+                                                            </a>
+
+                                                                <input
+                                                                    type="text"
+                                                                    disabled
+                                                                    placeholder="https://event-re.vercel.app/SingleEvent"
+                                                                />
+                                                        </div>
                                                         <IoCopyOutline
-                                                            className="share_link_i"
+                                                            className="share_link_i right_link_copy"
                                                             onClick={copyTextToClipboard}
                                                             style={{ cursor: "pointer" }}
                                                         />
@@ -156,14 +163,14 @@ const ShareEvent = () => {
                                                                 <FaFacebookF className="share_icon_i" />
 
                                                             </a>
-                                                            <a href="https://twitter.com/home" target="_blank">
+                                                            <a href="https://www.linkedin.com/" target="_blank">
                                                                 <FaLinkedin className="share_icon_i" />
 
                                                             </a>
 
-                                                            <a href="https://www.linkedin.com/" target="_blank">
+                                                            <a href="https://twitter.com/home" target="_blank">
 
-                                                            <FaXTwitter className="share_icon_i" />
+                                                                <FaXTwitter className="share_icon_i" />
                                                             </a>
                                                         </div>
                                                     </div>

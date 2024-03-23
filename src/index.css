@@ -5340,6 +5340,7 @@ height: 27px;
 }
 .Input_a{
     position: relative;
+    display: flex;
 
 }
 .Input_a a{
@@ -5349,7 +5350,22 @@ height: 27px;
     height: 100%;
     /* background: red; */
 }
+.Input_a2{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 200px;
+    background: red;
+}
+.Input_a2 a{
+    position: absolute;
+    /* width: 200px; */
+    height: 30px;
+    left: 0;
 
+
+}
 
 
 
