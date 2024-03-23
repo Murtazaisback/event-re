@@ -33,11 +33,16 @@ padding: 20px;
 .manage_filter_tabless {
     width: 100%;
     text-align: left;
-    padding: 10px;
+    padding: 10px 0px;
+
     overflow-y: scroll;
 }
 .filter_tables_body{
     width: 100%;
+}
+.first_row {
+    background-color: black;
+    color: white; /* Optional: Change text color for better visibility */
 }
 .manage_filter_tables_head{
     display: flex;
@@ -76,10 +81,15 @@ padding: 20px;
     justify-content: space-between;
     align-items: center;
     /* padding: 10px; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid black;
     cursor: pointer;
+    transition: all ease-in-out 0.15s;
+}
+.body_tr:hover{
+    /* background: black; */
 }
 @media screen and (max-width: 860px) {
     /* .manage_filter_tablee{ */

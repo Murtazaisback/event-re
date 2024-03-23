@@ -46,7 +46,7 @@ const AttendeesCom = ({ title = "", showBackButton }) => {
                     </div>
                     <div className='filter_tables_body'>
                         {[...Array(5)].map((_, index) => (
-                            <div className='body_tr' key={index} onClick={() => toggleGreenCheck(index)}>
+                            <div className={'body_tr' + (index === 0 ? ' first_row' : '')} key={index} onClick={() => toggleGreenCheck(index)}>
                                 <div className='head_it'>
                                     <div className='green_check'>
                                         <FaCheck style={{ color: "green", display: isGreenCheckVisible[index] ? 'block' : 'none' }} />

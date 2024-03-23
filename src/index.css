@@ -2618,7 +2618,7 @@ input:checked+.slider:before {
 
 .manage_filter_tables {
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px;
     position: relative;
     overflow-y: scroll;
 }
@@ -5381,9 +5381,34 @@ height: 27px;
     justify-content: flex-start;
 
 }
+.over_warp{
+    background: #212121;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-transform: capitalize;
+    
+}
+.Red_warn{
+    font-size: 13px;
+    color: red;
+}
 
-
-
+.over_warp_btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.over_warp_btns a{
+    border-radius: 25px;
+    background-clip: text;
+    background: linear-gradient(90deg, rgba(190, 158, 68, 1) 0%, rgba(216, 198, 144, 1) 100%);
+    padding: 5px 10px;
+    color: black;
+}
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
     .manage_order_area{

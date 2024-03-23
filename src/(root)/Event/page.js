@@ -39,6 +39,13 @@ const Event = () => {
             })
             .catch(error => console.error('Unable to copy text: ', error));
     };
+
+    const [openMenuIndex, setOpenMenuIndex] = useState(null);
+
+    const toggleMenu = (index) => {
+        setOpenMenuIndex(index === openMenuIndex ? null : index);
+    };
+
     return (
         <>
             <RootLayout>
@@ -155,8 +162,8 @@ const Event = () => {
                                                 <p className="para_title">Share a public version of this page. </p>
                                                 <p className="para_p">For example, you can add this to your bio link section on your social media, or share on your website to lead customers to your events.</p>
                                                 <div className="copy_links">
-                                                <div className='Input_a'>
-                                                    <a href='/Events' target="_blank"></a>
+                                                    <div className='Input_a'>
+                                                        <a href='/Events' target="_blank"></a>
                                                         <input type="text" disabled className="cursor_pointer"
                                                             placeholder='https://event-re.vercel.app/EventName' />
                                                     </div>
@@ -198,9 +205,9 @@ const Event = () => {
                                         </div>
                                         <div className="events_row_2">
                                             <div className="event_cards" >
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' />
-                                                <EventsCard imge={EventImg} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' />
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' />
+                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' index={0} isOpen={openMenuIndex === 0} toggleMenu={toggleMenu} />
+                                                <EventsCard imge={EventImg} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' index={1} isOpen={openMenuIndex === 1} toggleMenu={toggleMenu} />
+                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Sell Tickets" TicketHref='/sellTickets' index={2} isOpen={openMenuIndex === 2} toggleMenu={toggleMenu} />
                                             </div>
                                         </div>
                                     </div>
@@ -216,6 +223,17 @@ const Event = () => {
                                 </div>
                             </section>
                         </div>
+                    </div>
+                    <div id='popup9' className='overlay9'>
+                            <div className='over_warp'>
+                                    <h3>Are you Sure</h3>
+                                    <p className='Red_warn'>This Action Can't not be able to undo</p>
+                                    <div className='over_warp_btns'>
+
+                                    <a href='#' >Cancel</a>
+                                    <a href='#' >Confirm</a>
+                                    </div>
+                            </div>
                     </div>
                 </div>
             </RootLayout>

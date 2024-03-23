@@ -5,42 +5,35 @@ import React, { useState } from 'react';
 import "./index.css";
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 
-const EventsCard = ({ showMenuButton = true, eventDateTime="", TicketType="", TicketHref="", imge }) => {
-    const [isMenuOpen, setMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setMenuOpen(!isMenuOpen);
-    };
+const EventsCard = ({ showMenuButton = true, eventDateTime="", TicketType="", TicketHref="", imge, index, isOpen, toggleMenu }) => {
     return (
         <div className="event_card">
-            <img src={imge}alt='' className='event_card_img' width={270} height={270}/>
+            <img src={imge} alt='' className='event_card_img' width={270} height={270}/>
             <div className="card_info">
                 <p>Event Title</p>
                 <p>{eventDateTime}</p>
                 <p>Venue Name</p>
                 <div className='card_menu'>
-
                     <a href={TicketHref} className="btn sm">{TicketType}</a>
                     {showMenuButton && (
                         <div className="menu_container">
-                            <HiOutlineDotsHorizontal className="card_btn" onClick={toggleMenu} />
-                            {isMenuOpen && (
+                            <HiOutlineDotsHorizontal className="card_btn" onClick={() => toggleMenu(index)} />
+                            {isOpen && (
                                 <div className="sub_card_menu">
                                     {/* Add your menu items here */}
-                                    <a href="/ticketprices">Pause Ticket Sales</a>
-                                    <a href="/ticketprices">End Ticket Sales</a>
-                                    <a href="/eventdetails">Cancel Event</a>
-                                    <a href="/eventdetails">Un-publish Event</a>
-                                    <a href="/eventdetails">Archive Event</a>
+                                    <a href="#popup9">Pause Ticket Sales</a>
+                                    <a href="#popup9">End Ticket Sales</a>
+                                    <a href="#popup9">Cancel Event</a>
+                                    <a href="#popup9">Un-publish Event</a>
+                                    <a href="#popup9">Archive Event</a>
                                 </div>
                             )}
                         </div>
                     )}
-
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default EventsCard
+export default EventsCard;
