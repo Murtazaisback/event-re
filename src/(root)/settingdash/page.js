@@ -89,7 +89,7 @@ const Settingdash = () => {
                                             <p>Display Contact Information</p>
                                             <div className="setting_contact_inp">
                                                 <label className="switch">
-                                                    <input type="checkbox" className="age-checkbox" checked />
+                                                    <input type="checkbox" className="age-checkbox" />
                                                     <span className="slider round"></span>
                                                 </label>
                                                 <label htmlFor="">Email:</label>
@@ -98,7 +98,7 @@ const Settingdash = () => {
                                             </div>
                                             <div className="setting_contact_inp">
                                                 <label className="switch">
-                                                    <input type="checkbox" className="age-checkbox" checked />
+                                                    <input type="checkbox" className="age-checkbox"  />
                                                     <span className="slider round"></span>
                                                 </label>
                                                 <label htmlFor="">Phone:</label>

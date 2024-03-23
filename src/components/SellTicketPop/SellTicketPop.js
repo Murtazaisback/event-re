@@ -12,6 +12,7 @@ const SellTicketPop = () => {
                 <p className="res_yellow">Saturday, July 5, 2025 at 7:30 pm PST</p>
                 <p className="res_p">Select your seat(s) or table(s) below to add it to your cart</p>
             </div>
+            
             <img alt='' src={Render} className="res_triangle res_none" />
             <img alt='' src={Render_mobile_only} className="res_triangle pc_none" />
             <div className="promo_ticket">

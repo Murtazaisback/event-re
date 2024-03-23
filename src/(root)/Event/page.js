@@ -31,7 +31,7 @@ const Event = () => {
     const [copied, setCopied] = useState(false);
 
     const copyTextToClipboard = () => {
-        const textToCopy = "https://event-re.vercel.app/EventName"; // Text you want to copy
+        const textToCopy = "https://event-re.vercel.app/Events"; // Text you want to copy
         navigator.clipboard.writeText(textToCopy)
             .then(() => {
                 setCopied(true);
@@ -156,7 +156,7 @@ const Event = () => {
                                                 <p className="para_p">For example, you can add this to your bio link section on your social media, or share on your website to lead customers to your events.</p>
                                                 <div className="copy_links">
                                                 <div className='Input_a'>
-                                                    <a href='/Eventspage' target="_blank"></a>
+                                                    <a href='/Events' target="_blank"></a>
                                                         <input type="text" disabled className="cursor_pointer"
                                                             placeholder='https://event-re.vercel.app/EventName' />
                                                     </div>

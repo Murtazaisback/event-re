@@ -1323,13 +1323,13 @@ input:checked+.slider:before {
 }
 
 .next_btn {
-    margin-top: 30px;
+    margin-top: 35px;
     text-align: right;
     font-size: 16px;
     position: relative;
 }
 .next_btn2 {
-    margin-top: 350px;
+    margin-top: 356px;
     text-align: right;
     font-size: 16px;
     position: relative;
@@ -1743,7 +1743,7 @@ input:checked+.slider:before {
 
 .right_info_ticket .switch {
     /* margin-right: 30px; */
-    width: 50px;
+    width: 49px;
 }
 
 
@@ -3705,7 +3705,7 @@ height: 27px;
 
 .add_venue {
     position: relative;
-    width: 41%;
+    width: 35%;
     margin: auto;
     margin-top: 30px;
     border-radius: 10px;
@@ -3736,6 +3736,7 @@ height: 27px;
     margin: auto;
     color: #000;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .add_venue form input {
@@ -5084,6 +5085,7 @@ height: 27px;
    display: flex;
    justify-content: space-between;
    width: 100%;
+   align-items: center;
 }
 .low_event{
     font-size: 12px;
@@ -5367,7 +5369,18 @@ height: 27px;
 
 }
 
+.tiktct_mbtn video{
+    z-index: -1000;
+}
+.WebCam{
+    width: 400px;
+    height: 380px;
+}
+.tiktct_mbtn{
+    display: flex;
+    justify-content: flex-start;
 
+}
 
 
 

@@ -100,7 +100,7 @@ const SettingChart = () => {
                     </div>
                     <section className="home-section">
                         <div className="home-content">
-                       <SettingChartCom title="Event Title: Seating Chart"/>
+                       <SettingChartCom title="Seating Chart: Event Title Show Here"/>
 
                         </div>
                     </section>

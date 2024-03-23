@@ -134,7 +134,7 @@ const ManageOrder = () => {
                                         <button className="dropbtn1">More <i className='bx bx-chevron-down' ></i></button>
                                         <div className="dropdown-content1" style={{ left: "0" }}>
                                             <div className="box ">
-                                                <a className="" href="#popup7">View eTickets</a>
+                                                <a className="" href="/TicketPF" target="_blank">View eTickets</a>
                                             </div>
                                             <div className="box ">
                                                 <a className="" href="#popup8">Full Refund</a>

@@ -103,7 +103,7 @@ const ArchivedPrice = () => {
                         <div className="home-content">
                             <div className="tabs_container">
                                 
-                                <TicketPrice title='Archhived: Event Title Ticket Prices' label='Save Changes' href='#' showBackButton />
+                                <TicketPrice title='Archived: Event Title Ticket Prices' label='Save Changes' href='#' showBackButton />
                             </div>
 
                         </div>

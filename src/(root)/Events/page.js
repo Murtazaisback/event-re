@@ -4,6 +4,8 @@ import './index.css'
 import { Rectangle } from '../../public'
 // import Link from 'next/link'
 import RootLayout from '../layout';
+import EventsCard from '../../components/EventsCard/EventsCard.js';
+import { EventImg, One_img,  } from '../../public';
 
 const Events = () => {
   return (
@@ -25,35 +27,9 @@ const Events = () => {
 
                     <div className="events_row_2">
                         <div className="event_cards" >
-                            <div className="event_card">
-                                <img src={Rectangle} alt='Rectangle' className='event_card_img'/>
-                                <div className="card_info">
-                                    <p>Event Title</p>
-                                    <p>Sat, July 15, 2025 • 7:30 PM</p>
-                                    <p>Venue Name</p>
-                                    <a href="/SingleEvent" className="btn sm">Sell tickets</a>
-                                </div>
-                            </div>
-                            <div className="event_card">
-                                <img src={Rectangle} alt='Rectangle' className='event_card_img'/>
-                                <div className="card_info">
-                                    <p>Event Title</p>
-                                    <p>Sat, July 15, 2025 • 7:30 PM</p>
-                                    <p>Venue Name</p>
-                                    <a href="/SingleEvent" className="btn sm">Sell tickets</a>
-                                    {/* <a href="./singleevent.html" className="btn sm">Sell tickets</a> */}
-                                </div>
-                            </div>
-                            <div className="event_card">
-                                <img src={Rectangle} alt='Rectangle' className='event_card_img'/>
-                                <div className="card_info">
-                                    <p>Event Title</p>
-                                    <p>Sat, July 15, 2025 • 7:30 PM</p>
-                                    <p>Venue Name</p>
-                                    <a href="/SingleEvent" className="btn sm">Sell tickets</a>
-                                    {/* <a href="./singleevent.html" className="btn sm">Get tickets</a> */}
-                                </div>
-                            </div>
+                        <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                        <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                        <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
                         </div>
                     </div>
                 </div>

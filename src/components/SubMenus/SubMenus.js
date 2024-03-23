@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { FaRegCalendarAlt, FaChevronDown, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import './index.css'
+import { useLocation } from 'react-router-dom';
 
 const SubMenus = () => {
 
@@ -72,12 +73,15 @@ const SubMenus = () => {
 
 
 export const Silder_icon = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [isSidebarOpen, setSidebarOpen] = useState(() => {
+    // Initialize sidebar state from local storage or default to true
+    return localStorage.getItem('sidebarOpen') === 'true' ? true : false;
+  });
+  const location = useLocation();
 
   useEffect(() => {
-    // Check the screen width and set the initial sidebar state
     const screenWidth = window.innerWidth;
-    if (screenWidth <= 768) { // Adjust this value based on your desired breakpoint
+    if (screenWidth <= 768) {
       setSidebarOpen(false);
       const sidebar = document.querySelector('.sidebar');
       if (sidebar) {
@@ -85,16 +89,24 @@ export const Silder_icon = () => {
       }
     }
   }, []);
-  const toggleSidebar = () => {
-    // Toggle the sidebar state
-    setSidebarOpen(prevState => !prevState);
 
-    // Toggle the 'close' class on the sidebar
+  useEffect(() => {
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebar && !isSidebarOpen) {
+      sidebar.classList.add('close');
+    }
+  }, [location.pathname, isSidebarOpen]);
+
+  const toggleSidebar = () => {
+    const newSidebarState = !isSidebarOpen;
+    setSidebarOpen(newSidebarState);
+    localStorage.setItem('sidebarOpen', newSidebarState); // Save sidebar state to local storage
     const sidebar = document.querySelector('.sidebar');
     if (sidebar) {
       sidebar.classList.toggle('close');
     }
   };
+
 
   return (
     <div className="icon-wrapper-arrow" onClick={toggleSidebar}>
