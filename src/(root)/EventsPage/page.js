@@ -10,6 +10,11 @@ const EventsPage = () => {
         <>
         <RootLayout>
         <div className='main_container'>
+        <div className='BreadC'>
+            <a className='BreadC_past' href='/'>Home</a>
+            <p className='BreadC_div'>/</p>
+            <a className='BreadC_Active' href='/EventsPage'>Events</a>
+        </div>
             <section className="search_form_a">
                 <form action="" className="search_form">
                     <input type="search" placeholder="Search for an event, artist, or venue..." />

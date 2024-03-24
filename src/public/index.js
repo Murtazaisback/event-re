@@ -28,6 +28,7 @@ import Dawn_img from './WhatsApp Image 2024-02-19 at 9.29.10 PM.jpeg'
 import One_img from './1.png'
 
 import Render_mobile_only from './Renderer Mobile - Selected seat 2 1.png'
+import Zero_bg_logo from './Social_Profile_Mirko-nobg.png'
 
 
 
@@ -54,6 +55,8 @@ export{
     General_img,
     One_img,
     Render_mobile_only,
+    Zero_bg_logo,
+    
     
 }
 export { default as Dawn_img } from './WhatsApp Image 2024-02-19 at 9.29.10 PM.jpeg';

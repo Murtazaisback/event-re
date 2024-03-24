@@ -36,7 +36,7 @@ class PlanDrop extends Component {
                         <option value="j">Custom</option>
                     </select>
                 </div>
-                <p><span className="price1">$18.49</span>month</p>
+                <p><span className="price1">$18.49/</span>month</p>
                 <p>Billed annually</p>
                 <p>OR</p>
                 <p><span className="price2">$24.95</span>  billed monthly</p>

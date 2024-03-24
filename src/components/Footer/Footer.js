@@ -4,7 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
-import { Mine_logo } from '../../public/index'
+import { Mine_logo, Zero_bg_logo} from '../../public/index'
 import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div className="footer_info">
                 <div className="footer_info_imgs">
-                    <img src={Mine_logo} alt='mine logo' className='Logo_mine'/>
+                    <img src={Zero_bg_logo} alt='mine logo' className='Logo_mine'/>
                     <p>support@eventvisionary.com</p>
                     <p>Event Visionary, LLC</p>
                     <p>30 N Gould St, Ste R,<br/>

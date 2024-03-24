@@ -95,8 +95,9 @@ footer {
 }
 
 .Logo_mine {
-    height: 100px;
-    width: 100px;
+    /* height: 100px; */
+    width: 140px;
+    /* background: red; */
 }
 
 .footer_info_imgs p {

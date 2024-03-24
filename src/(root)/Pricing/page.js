@@ -9,6 +9,11 @@ const Pricing = () => {
     <>
     <RootLayout>
     <div className='main_container'>
+        <div className='BreadC'>
+            <a className='BreadC_past' href='/'>Home</a>
+            <p className='BreadC_div'>/</p>
+            <a className='BreadC_Active' href='/Pricing'>Pricing</a>
+        </div>
       <h1>Pricing</h1>
             <div className="manager_blocks">
                 <h2>Events Manager</h2>

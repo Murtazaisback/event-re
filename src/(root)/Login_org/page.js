@@ -11,6 +11,11 @@ const Login_org = () => {
     <>
       <RootLayout>
         <div className='main_container'>
+        <div className='BreadC'>
+            <a className='BreadC_past' href='/'>Home</a>
+            <p className='BreadC_div'>/</p>
+            <a className='BreadC_Active' href='/Login_org'>Login as Organizer</a>
+        </div>
           <div className="login_container">
             <div className="login_section">
 

@@ -43,9 +43,8 @@ const Event = () => {
     const [openMenuIndex, setOpenMenuIndex] = useState(null);
 
     const toggleMenu = (index) => {
-        setOpenMenuIndex(index === openMenuIndex ? null : index);
+        setOpenMenuIndex(openMenuIndex === index ? null : index);
     };
-
     return (
         <>
             <RootLayout>
@@ -179,8 +178,9 @@ const Event = () => {
                                                     <a href="https://www.facebook.com/profile.php?id=61554004420226" target="_blank">
 
                                                         <FaFacebookF className="share_icon_i" />
+                                                        
                                                     </a>
-                                                    <a href="https://www.instagram.com/eventvisionary/?igshid=MzMyNGUyNmU2YQ%3D%3D" target="_blank">
+                                                    <a href="https://www.linkedin.com/" target="_blank">
 
                                                         <FaLinkedin className="share_icon_i" />
                                                     </a>

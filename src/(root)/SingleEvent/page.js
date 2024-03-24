@@ -55,6 +55,13 @@ const SingleEvent = () => {
         <>
             <RootLayout>
                 <div className='main_container'>
+                <div className='BreadC'>
+            <a className='BreadC_past' href='/'>Home</a>
+            <p className='BreadC_div'>/</p>
+            <a className='BreadC_past' href='/EventsPage'>Events</a>
+            <p className='BreadC_div'>/</p>
+            <a className='BreadC_Active' href='/SingleEvent'>(evnet name)</a>
+        </div>
                     <div className='single_event_sec'>
                         <div className="single_event_upper">
                             <img src={EventImg} alt='EventImg' className="single_event_img" />

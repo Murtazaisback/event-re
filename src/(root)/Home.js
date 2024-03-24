@@ -137,7 +137,7 @@ const Home = () => {
             ref={ref3}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: inView3 ? 1 : 0, scale: inView3 ? 1 : 0.5 }}
-            transition={{ duration: 0.25 }}
+            transition={{ duration: 0.1 }}
             style={{
               animation: inView3 ? 'none' : 'scaleUpLeft 0.25s forwards',
             }}

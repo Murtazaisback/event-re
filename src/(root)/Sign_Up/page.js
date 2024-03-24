@@ -11,6 +11,11 @@ const Sign_Up = () => {
     <>
       <RootLayout>
     <div className='main_container'>
+    <div className='BreadC'>
+            <a className='BreadC_past' href='/'>Home</a>
+            <p className='BreadC_div'>/</p>
+            <a className='BreadC_Active' href='/Sign_Up'>Sign Up</a>
+        </div>
       <div className="login_container">
                 <div className="login_section">
                     <div className="coustomer_form">
