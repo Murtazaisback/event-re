@@ -5396,7 +5396,8 @@ height: 27px;
 .tiktct_mbtn{
     display: flex;
     justify-content: flex-start;
-
+    margin-top: 40px;
+    cursor: pointer !important;
 }
 .over_warp{
     background: #212121;
@@ -6930,6 +6931,7 @@ height: 27px;
     border-radius: 25px;
     border: 1px solid var(--color-yellow);
     color: white;
+    cursor: pointer;
 
 }
 
