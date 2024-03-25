@@ -89,7 +89,7 @@ padding: 20px;
     transition: all ease-in-out 0.15s;
 }
 .body_tr:hover{
-    /* background: black; */
+    background: black;
 }
 @media screen and (max-width: 860px) {
     /* .manage_filter_tablee{ */

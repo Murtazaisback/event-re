@@ -2591,6 +2591,7 @@ input:checked+.slider:before {
     background: #212121;
     border: none;
     outline: none;
+    color: white;
 }
 
 .manage_filter_btn {

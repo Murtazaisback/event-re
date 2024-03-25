@@ -199,6 +199,86 @@ const ManageOrder = () => {
 
                         </div>
                     </div>
+                    <div id="popup8" className="overlay9 ">
+                <div className="main_popupre">
+                    <p>Notice</p>
+                    <p>Confirm: You are about to send this customer a refund of. </p>
+                    <div className="main_popupre_btns">
+                        <a href="" className="tran">Cancel</a>
+                        <div className="box ">
+                            <a className="btn" href="#popup10">Confirm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="popup10" className="overlay9 ">
+                <div className="main_popupre">
+                    <a className="jclose" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                            height="25" viewBox="0 0 25 25" fill="none">
+                            <g clip-path="url(#clip0_517_27)">
+                                <path
+                                    d="M12.5 0.703125C5.97656 0.703125 0.703125 5.97656 0.703125 12.5C0.703125 19.0234 5.97656 24.3359 12.5 24.3359C19.0234 24.3359 24.3359 19.0234 24.3359 12.5C24.3359 5.97656 19.0234 0.703125 12.5 0.703125ZM12.5 22.5781C6.95313 22.5781 2.46094 18.0469 2.46094 12.5C2.46094 6.95313 6.95313 2.46094 12.5 2.46094C18.0469 2.46094 22.5781 6.99219 22.5781 12.5391C22.5781 18.0469 18.0469 22.5781 12.5 22.5781Z"
+                                    fill="#FAE100" />
+                                <path
+                                    d="M16.0937 8.86719C15.7422 8.51562 15.1953 8.51562 14.8438 8.86719L12.5 11.25L10.1172 8.86719C9.76562 8.51562 9.21875 8.51562 8.86719 8.86719C8.51562 9.21875 8.51562 9.76562 8.86719 10.1172L11.25 12.5L8.86719 14.8828C8.51562 15.2344 8.51562 15.7812 8.86719 16.1328C9.02344 16.2891 9.25781 16.4062 9.49219 16.4062C9.72656 16.4062 9.96094 16.3281 10.1172 16.1328L12.5 13.75L14.8828 16.1328C15.0391 16.2891 15.2734 16.4062 15.5078 16.4062C15.7422 16.4062 15.9766 16.3281 16.1328 16.1328C16.4844 15.7812 16.4844 15.2344 16.1328 14.8828L13.75 12.5L16.1328 10.1172C16.4453 9.76562 16.4453 9.21875 16.0937 8.86719Z"
+                                    fill="#FAE100" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_517_27">
+                                    <rect width="25" height="25" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <p>Refund Successfully Initiated</p>
+                    <p>Your customer should receive their refund within 3-5 business days </p>
+                </div>
+            </div>
+            <div id="popup9" className="overlay9 ">
+                <div className="main_popupre">
+                    <a className="mclose" href="#">
+                        <i className="bx x"></i>
+                    </a>
+                    <div className="popup_center">
+
+                        <h3>Enter Partial Refund Amount</h3>
+                        <p className="sm">Order Total: $200.59</p>
+                        <div className="inputs_pup">
+                            <label htmlFor="">Partial Refund Amount:</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div className="main_popupre_btns">
+                        <a href="" className="tran">Cancel</a>
+                        <div className="box ">
+                            <a className="btn" href="#">Refund</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="popup27" className="overlay9 ">
+                <div className="main_popupre">
+                    <a className="mclose" href="#">
+                        <i className="bx x"></i>
+                    </a>
+                    <div className="popup_center">
+
+                        <h3>Send e-Tickets</h3>
+                        <div className="inputs_pup lg">
+                            <label htmlFor="">Email:</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div className="main_popupre_btns">
+                        <a href="" className="tran">Cancel</a>
+                        <div className="box ">
+                            <a className="btn" href="#">Send e-Tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
                 </div>
             </RootLayout>
         </>

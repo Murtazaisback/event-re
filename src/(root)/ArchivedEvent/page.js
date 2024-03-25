@@ -107,6 +107,7 @@ const ArchivedEvent = () => {
                     </section>
                 </div>
             </div>
+            
         </div>
         </RootLayout>
     </>
