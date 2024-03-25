@@ -927,7 +927,7 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     width: 100%;
     flex-direction: column;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .tabs_section {
@@ -1008,7 +1008,7 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     justify-content: space-between;
     align-items: center;
     /* gap: 110px; */
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     /* overflow-x: scroll !important; */
     flex-wrap: wrap;
 }
@@ -1019,7 +1019,7 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     justify-content: space-between;
     /* align-items: center; */
     gap: 20px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     /* overflow-x: scroll !important; */
     /* flex-wrap: wrap; */
 }
@@ -1319,7 +1319,7 @@ input:checked+.slider:before {
 
 #Prices {
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .next_btn {
@@ -1329,7 +1329,7 @@ input:checked+.slider:before {
     position: relative;
 }
 .next_btn2 {
-    margin-top: 356px;
+    margin-top: 376px;
     text-align: right;
     font-size: 16px;
     position: relative;
@@ -4914,7 +4914,7 @@ height: 27px;
     display: flex;
     position: relative;
     height: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     min-height: 80vh;
 }
 
