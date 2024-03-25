@@ -95,8 +95,8 @@ const EventRegister = ({ title = '', label = '', href = '', showBackButton }) =>
                                     Add New Venue
                                 </div>
                             </a>
-                            <div id="popup20" className="overlay">
-                                <div className="add_venue">
+                            <div id="popup20" className="overlay9">
+                                <div className="add_venue add_ven2">
                                     <a className="jclose" href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25"
                                             height="25" viewBox="0 0 25 25" fill="none">

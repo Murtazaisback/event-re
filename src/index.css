@@ -3729,6 +3729,12 @@ height: 27px;
     padding-left: 20px;
     z-index: 1;
 }
+.add_venue h2{
+    margin-bottom: 20px;
+}
+.add_ven2{
+    width: 40% ;
+}
 
 .add_venue form {
     display: flex;
@@ -5462,6 +5468,9 @@ height: 27px;
 
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
+    .add_ven2{
+        width: 90%;
+    }
     .conatiner_warp{
         width: 500px;
     }
