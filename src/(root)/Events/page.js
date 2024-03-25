@@ -6,8 +6,13 @@ import { Rectangle } from '../../public'
 import RootLayout from '../layout';
 import EventsCard from '../../components/EventsCard/EventsCard.js';
 import { EventImg, One_img,  } from '../../public';
-
+import { useState } from 'react';
 const Events = () => {
+    const [openMenuIndex, setOpenMenuIndex] = useState(null);
+
+    const toggleMenu = (index) => {
+        setOpenMenuIndex(openMenuIndex === index ? null : index);
+    };
   return (
     <>
         <RootLayout>
@@ -27,9 +32,12 @@ const Events = () => {
 
                     <div className="events_row_2">
                         <div className="event_cards" >
-                        <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                        <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                        <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                        <EventsCard imge={One_img} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                        <EventsCard imge={EventImg} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                        <EventsCard imge={One_img} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
                         </div>
                     </div>
                 </div>

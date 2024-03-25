@@ -9,8 +9,14 @@ import "./index.css"
 import EventsCard from '../../components/EventsCard/EventsCard';
 import { EventImg, One_img } from '../../public';
 import RootLayout from '../layout';
+import { useState } from 'react';
 
 const CustomerAccount = () => {
+    const [openMenuIndex, setOpenMenuIndex] = useState(null);
+
+    const toggleMenu = (index) => {
+        setOpenMenuIndex(openMenuIndex === index ? null : index);
+    };
     return (
         <>
             <RootLayout>
@@ -73,17 +79,23 @@ const CustomerAccount = () => {
                                         <div className="event_like">
                                             <h3>Events You Might Like</h3>
                                             <div className="evet_rows">
-                                                <EventsCard imge={One_img}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false}  />
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
-                                                <EventsCard imge={EventImg} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
+                                                <EventsCard imge={EventImg} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                                                <EventsCard imge={One_img} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                                                <EventsCard imge={EventImg} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
                                             </div>
                                         </div>
                                         <div className="event_Organizer">
                                             <h3>More Events By " Event Organizer "</h3>
                                             <div className="evet_rows">
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
-                                                <EventsCard imge={EventImg}eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
-                                                <EventsCard imge={One_img} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref='/SingleEvent' showMenuButton={false} />
+                                                <EventsCard imge={One_img} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                                                <EventsCard imge={EventImg} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                                                <EventsCard imge={One_img} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
                                             </div>
                                         </div>
                                     </div>
