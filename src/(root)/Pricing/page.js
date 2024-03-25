@@ -2,12 +2,17 @@
 import PlanDrop from '../../components/PlanDrop/PlanDrop'
 
 import React from 'react'
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 import RootLayout from '../layout';
 
 const Pricing = () => {
   return (
     <>
     <RootLayout>
+    {/* <Header /> */}
+    
+      
     <div className='main_container'>
         <div className='BreadC'>
             <a className='BreadC_past' href='/'>Home</a>
@@ -116,6 +121,7 @@ const Pricing = () => {
 
         </div>
     </div>
+    {/* <Footer /> */}
     </RootLayout>
     </>
   )

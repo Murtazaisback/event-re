@@ -3,10 +3,17 @@ import { EventImg, One_img, Rectangle } from '../../public';
 import React from 'react'
 import { IoMdSearch } from "react-icons/io";
 import RootLayout from '../layout';
+import { useState } from 'react';
 
 
 const EventsPage = () => {
+    const [openMenuIndex, setOpenMenuIndex] = useState(null);
+
+    const toggleMenu = (index) => {
+        setOpenMenuIndex(openMenuIndex === index ? null : index);
+    };
     return (
+
         <>
         <RootLayout>
         <div className='main_container'>
@@ -50,14 +57,22 @@ const EventsPage = () => {
                     <div className="events_row_2">
                         <div className="event_cards" >
 
-                            <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                            <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                            <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                            <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                            <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                            <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                            <EventsCard imge={One_img} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
-                            <EventsCard imge={EventImg} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" />
+                            <EventsCard imge={EventImg} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                            <EventsCard imge={One_img} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                            <EventsCard imge={EventImg} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                            <EventsCard imge={One_img} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                            <EventsCard imge={EventImg} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                            <EventsCard imge={One_img} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                            <EventsCard imge={EventImg} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
+                            <EventsCard imge={One_img} toggleMenu={false} showMenuButton={false} eventDateTime="Sat, July 15, 2025 • 7:30 PM" TicketType="Get Tickets" TicketHref="/SingleEvent" isOpen={openMenuIndex === 0} toggleMenu={toggleMenu}
+                                showMenuButton={false} />
                         </div>
                     </div>
                     <section className="pagination">

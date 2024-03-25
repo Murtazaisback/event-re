@@ -47,8 +47,9 @@ nav {
   /* background: linear-gradient(90deg, rgba(190, 158, 68, 1) 0%, rgba(216, 198, 144, 1) 100%); */
   /* -webkit-background-clip: text; */
   /* background-clip: text; */
-  color: #cbb26a;
+  color: #cbb26a !important;
   /* font-weight: 500; */
+  background: none !important;
 }
 
 .li_active {
