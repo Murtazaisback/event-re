@@ -415,15 +415,20 @@ box-shadow: 2px 2px 4px 0px rgba(75, 75, 75, 0.75), 4px 4px 4px 0px rgba(71, 71,
     gap: 20px;
 }
 .Ticket_p{
-    margin-left: 160px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    /* margin-left: 170px; */
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
 }
 .sell_tickets_box_in {
   display: flex;
     align-items: center;
     justify-content: center;
     gap: 60px ;
+    margin-left: 30px;
     
   }
 @media screen and (max-width: 768px) {

@@ -227,7 +227,7 @@ const Event = () => {
                     <div id='popup9' className='overlay9'>
                             <div className='over_warp'>
                                     <h3>Are you Sure</h3>
-                                    <p className='Red_warn'>This Action Can't not be able to undo</p>
+                                    <p className='Red_warn'>This action can't be undone.</p>
                                     <div className='over_warp_btns'>
 
                                     <a href='#' >Cancel</a>

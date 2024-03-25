@@ -124,7 +124,7 @@ const ShareEvent = () => {
                                                     <div className="exit_event">
                                                         <p>You can view your event here</p>
                                                         {/* <img src="../imgs/enter 1.png" alt=""/> */}
-                                                        <a href='/SingleEvent'>
+                                                        <a href='/SingleEvent' target="_blank">
 
                                                             <MdExitToApp className="share_link_i" />
                                                         </a>
@@ -178,7 +178,7 @@ const ShareEvent = () => {
 
                                             </div>
                                             <div className="share_btns">
-                                                <a className="w3-bar-item w3-button tablink w3-red tab_btn new_envet_btn" href="/NewEvent">Create a New Event</a>
+                                                <a className="w3-bar-item w3-button  w3-red tab_btn new_envet_btn" href="/NewEvent">Create a New Event</a>
                                                 <a href="/Event" className="tab_btnn">Done</a>
 
                                             </div>

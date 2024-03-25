@@ -21,11 +21,17 @@ const SellTicketwarp = () => {
 
     return (
         <div className="sell_tickets_warp">
+            <div className='sell_box_warp'>
+
             <TicketCounter Addclass='sell_tickets_box' />
             <TicketCounter Addclass='sell_tickets_box' />
-            <p className='Ticket_p'>Ticket Type Name (Multi-Level)</p>
+            <b className='Tiket_p'>Ticket Type Name (Multi-Level)</b>
+            </div>
+            <div className='sell_box_warp'>
+
             <TicketCounter Addclass='sell_tickets_box_in' />
             <TicketCounter Addclass='sell_tickets_box_in' />
+            </div>
         </div>
     );
 };

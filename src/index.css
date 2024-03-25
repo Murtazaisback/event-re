@@ -971,6 +971,14 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     background: none;
     border: 1px solid #be9e44;
 }
+.tablink{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    /* margin-top: 30px; */
+}
 
 .tab_btn svg {
     position: absolute;
@@ -1157,6 +1165,7 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     gap: 20px;
     align-items: flex-end;
     padding-top: 40px;
+    /* justify-content: space-between; */
 }
 
 
@@ -3707,7 +3716,7 @@ height: 27px;
 
 .add_venue {
     position: relative;
-    width: 35%;
+    width: 95%;
     margin: auto;
     margin-top: 30px;
     border-radius: 10px;
@@ -5427,21 +5436,40 @@ height: 27px;
 .BreadC_past{
     color: lightgray;
 }
+
+
+
+
+
+
+
+.sell_box_warp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.Tiket_p{
+    margin-right: 163px;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+
+
+
+
+
+
 /*Stying for small screens*/
 @media screen and (max-width: 860px) {
     .conatiner_warp{
         width: 500px;
     }
-    .manage_order_area{
-        min-width: 400px;
-    }
+    
     .tiktct_mbtn{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    #preview{
-        min-width: 400px;
     }
     .event_dash_btns{
         gap: 10px;

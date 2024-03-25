@@ -307,17 +307,17 @@ const EventRegister = ({ title = '', label = '', href = '', showBackButton }) =>
                         <img src={Upload_img} alt=''/>
                         <p>Drag and drop image here</p>
                     </div>
-                    <div className="next_btn">
-
-                        <a className="w3-bar-item w3-button tablink tab_btnn cursor_pointer  "
-                            href={href}>{label}</a>
-
-                    </div>
 
                 </div>
 
 
             </div>
+            <div className='tablink'>
+
+                        <a className=" tab_btnn cursor_pointer  "
+                            href={href}>{label}</a>
+            </div>
+
         </div>
 
     )

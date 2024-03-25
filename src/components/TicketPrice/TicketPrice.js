@@ -279,16 +279,23 @@ const TicketPrice = ({ title = '', label = '', href = '', showBackButton }) => {
                                 </form>
                             )}
                         </div>
-                        <div className="next_btn2">
+                        {/* <div className="next_btn2">
 
                             <a className="w3-bar-item w3-button tablink tab_btnn " href={href}>{label}</a>
-                        </div>
+                        </div> */}
                     </div>
 
 
 
                 </form>
-            </div></div>
+            </div>
+            <div className='tablink'>
+
+                        <a className=" tab_btnn cursor_pointer  "
+                            href={href}>{label}</a>
+            </div>
+            
+            </div>
     )
 }
 
