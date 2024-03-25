@@ -17,11 +17,12 @@
   color: var(--color-yellow) !important;
 }
 .yellow_crr{
-    background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent !important;
+    /* background: linear-gradient(90deg, rgba(190,158,68,1) 0%, rgba(216,198,144,1) 100%); */
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
+  /* color: transparent !important; */
   border: none !important;
+  color: #cbb26a !important;
 }
 * {
   box-sizing: border-box;
