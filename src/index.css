@@ -170,7 +170,9 @@ ul {
 a {
     text-decoration: none;
 }
-
+body{
+    background: #000;
+}
 #root {
     overflow-x: hidden;
     background: #000;
