@@ -1320,7 +1320,7 @@ input:checked+.slider:before {
     height: 285px;
     border: 1px dashed var(--color-yellow);
     /* visibility: hidden; */
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     flex-direction: column;
     gap: 40px;
