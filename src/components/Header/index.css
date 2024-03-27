@@ -110,7 +110,7 @@ nav {
 .dropdwon_custom {
   display: flex;
   align-items: center;
-  color: #FFE100;
+  color: #cbb26a;
   cursor: pointer;
   gap: 20px;
 }

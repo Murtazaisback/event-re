@@ -46,6 +46,7 @@ import ShareEvent from './(root)/ShareEvent/page.js'
 import SingleEvent from './(root)/SingleEvent/page.js'
 import TicketPF from './(ticket)/TicketsPF/page.js'
 import TermsConditions from './(root)/Terms_and_Conditions/page.js'
+import VenuSetting from './(root)/venuSetting/page.js'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -99,6 +100,7 @@ root.render(
         <Route path="/SingleEvent" element={<SingleEvent />} />
         <Route path="/TicketPF" element={<TicketPF />} />
         <Route path="/Terms_and_Conditions" element={<TermsConditions />} />
+        <Route path="/venuSetting" element={<VenuSetting />} />
         {/* Define additional pages/routes */}
       </Routes>
     </Router>

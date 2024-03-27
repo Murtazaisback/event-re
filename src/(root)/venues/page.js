@@ -118,7 +118,7 @@ const Venues = () => {
                                                         <td>1</td>
                                                         <td><a href=" #popup22">Edit Details</a></td>
                                                         <td>
-                                                            <a className="table_e" href="/settingChart">Edit Seating</a>
+                                                            <a className="table_e" href="/venuSetting">Edit Seating</a>
                                                            
                                                         </td>
                                                     </tr>
@@ -132,7 +132,7 @@ const Venues = () => {
                                                         <td>1</td>
                                                         <td><a href=" #popup22">Edit Details</a></td>
                                                         <td>
-                                                            <a className="table_e" href="/settingChart">Edit Seating</a>
+                                                            <a className="table_e" href="/venuSetting">Edit Seating</a>
                                                             <div id="popup23" className="overlay9">
                                                                 <div className="main_edit">
 
