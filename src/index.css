@@ -1015,7 +1015,7 @@ box-shadow: 2px 2px 4px 0px #212121 inset, -2px -2px 4px 0px #25251F inset, 10px
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     /* gap: 110px; */
     /* padding-bottom: 10px; */
     /* overflow-x: scroll !important; */
